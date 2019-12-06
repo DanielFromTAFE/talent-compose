@@ -4,7 +4,7 @@ services:
   talent.spa:
     image: mvpstudionz/talent.spa:dev
     ports:
-      - "5034:5034"
+      - "80:5034"
   talent.services.identity:
     image: mvpstudionz/talent.services.identity:dev
     ports:
