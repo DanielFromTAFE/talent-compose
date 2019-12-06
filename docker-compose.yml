@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  talent.spa:
+    image: mvpstudionz/talent.spa:dev
+    ports:
+      - "5034:5034"
+  talent.services.identity:
+    image: mvpstudionz/talent.services.identity:dev
+    ports:
+      - "60998:60998"
+  talent.api:
+    image: mvpstudionz/talent.api:dev
+    ports:
+      - "60880:60880"
